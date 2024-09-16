@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFC Fighter Stats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .nav-bar {
+            background-color: red;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+            color: white;
+        }
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .fighter-info {
+            text-align: center;
+            padding: 20px;
+        }
+        .fighter-info h2 {
+            color: red;
+            font-size: 28px;
+        }
+        .profile-image img {
+            width: 200px;  /* Set width to 200px */
+            height: 200px;  /* Set height to 400px */
+        }
+        .details {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .details div {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .details h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .stats-table th, .stats-table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .stats-table th {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .stats-table tr:hover {
+            background-color: #f2f2f2;
+        }
+        .event-details {
+            background-color: white;
+            border-radius: 10px;
+            margin: 0 auto;
+            width: 90%;
+            padding: 20px;
+        }
+        .event-details h3 {
+            font-size: 16px;
+        }
+        .event-details table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .event-details th, .event-details td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .event-details th {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .win {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>UFC STATS</h1>
+</header>
+
+<div class="nav-bar">
+    <a href="#">EVENTS & FIGHTS</a>
+    <a href="#">FIGHTERS</a>
+    <a href="#">STAT LEADERS</a>
+</div>
+
+<div class="fighter-info">
+    <div class="profile-image">
+        <img src="imagesphoto4.jpeg" alt="Fighter Profile Picture">
+    </div>
+    <h2>Halis Kumala Chandra</h2>
+    <p>RECORD: 18-0-0</p>
+    <div class="details">
+        <div>
+            <h3>HEIGHT: 5' 8"</h3>
+            <h3>WEIGHT: 135 lbs</h3>
+            <h3>REACH: 69"</h3>
+            <h3>STANCE: Orthodox</h3>
+            <h3>DOB: Feb 07, 2005</h3>
+        </div>
+        <div>
+            <h3>CAREER STATISTICS:</h3>
+            <p>SLpM: 4.46</p>
+            <p>Str. Acc.: 63%</p>
+            <p>SApM: 1.36</p>
+            <p>Str. Def.: 63%</p>
+            <p>TD Avg.: 3.98</p>
+            <p>TD Acc.: 50%</p>
+            <p>TD Def.: 100%</p>
+            <p>Sub. Avg.: 0.4</p>
+        </div>
+    </div>
+</div>
+
+<div class="event-details">
+    <h3>Click on row to see detailed stats</h3>
+    <table class="stats-table">
+        <tr>
+            <th>W/L</th>
+            <th>FIGHTER</th>
+            <th>KD</th>
+            <th>STR</th>
+            <th>TD</th>
+            <th>SUB</th>
+            <th>EVENT</th>
+            <th>METHOD</th>
+            <th>ROUND</th>
+            <th>TIME</th>
+        </tr>
+        <tr>
+            <td><span class="win">WIN</span></td>
+            <td>Halis Kumala Chandra vs. Faiz Kacamata</td>
+            <td>0</td>
+            <td>98</td>
+            <td>5</td>
+            <td>0</td>
+            <td>UFC Fight Night: Halis vs. Faiz</td>
+            <td>U-DEC</td>
+            <td>5</td>
+            <td>5:00</td>
+        </tr>
+        <tr>
+            <td><span class="win">WIN</span></td>
+            <td>Halis Kumala Chandra vs. Bekzat Almikhan</td>
+            <td>0</td>
+            <td>68</td>
+            <td>5</td>
+            <td>0</td>
+            <td>UFC Fight Night: Rozenstruik vs. Gaziev</td>
+            <td>U-DEC</td>
+            <td>3</td>
+            <td>5:00</td>
+        </tr>
+        <tr>
+            <td><span class="win">WIN</span></td>
+            <td>Halis Kumala Chandra vs. Raoni Barcelos</td>
+            <td>1</td>
+            <td>36</td>
+            <td>1</td>
+            <td>0</td>
+            <td>UFC Fight Night: Strickland vs. Imavov</td>
+            <td>KO/TKO</td>
+            <td>1</td>
+            <td>4:40</td>
+        </tr>
+        <tr>
+            <td><span class="win">WIN</span></td>
+            <td>Halis Kumala Chandra vs. Nate Maness</td>
+            <td>0</td>
+            <td>32</td>
+            <td>3</td>
+            <td>0</td>
+            <td>UFC Fight Night: Tsarukyan vs. Gamrot</td>
+            <td>U-DEC</td>
+            <td>3</td>
+            <td>5:00</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
